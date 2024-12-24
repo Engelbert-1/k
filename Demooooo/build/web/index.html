@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+<html lang="vi-VN" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><!-- Optimized with WP Meteor v2.3.10 - https://wordpress.org/plugins/wp-meteor/ --><script >var _wpmeteor={"rdelay":2000,"elementor-animations":true,"elementor-pp":true,"v":"2.3.10"};if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]wpmeteordisable/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?wpmeteordisable=1"}else{document.location.href=href.replace("#","?wpmeteordisable=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&wpmeteordisable=1"}else{document.location.href=href.replace("#","&wpmeteordisable=1#")}}}}</script><script >!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="/",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";n.r(e);var r=new(function(){function t(){this.l=[]}var e=t.prototype;return e.emit=function(t,e){void 0===e&&(e=null),this.l[t]&&this.l[t].forEach((function(t){return t(e)}))},e.on=function(t,e){var n;(n=this.l)[t]||(n[t]=[]),this.l[t].push(e)},e.off=function(t,e){this.l[t]=(this.l[t]||[]).filter((function(t){return t!==e}))},t}()),o=new Date,i=document,a=function(){function t(){this.known=[]}var e=t.prototype;return e.init=function(){var t,e=this,n=!1,o=function(t){if(!n&&t&&t.fn&&!t.__wpmeteor){var r=function(e){return i.addEventListener("DOMContentLoaded",(function(n){e.bind(i)(t,n)})),this};e.known.push([t,t.fn.ready,t.fn.init.prototype.ready]),t.fn.ready=r,t.fn.init.prototype.ready=r,t.__wpmeteor=!0}return t};window.jQuery&&(t=o(window.jQuery)),Object.defineProperty(window,"jQuery",{get:function(){return t},set:function(e){return t=o(e)}}),r.on("l",(function(){return n=!0}))},e.unmock=function(){this.known.forEach((function(t){var e=t[0],n=t[1],r=t[2];e.fn.ready=n,e.fn.init.prototype.ready=r}))},t}(),c={};!function(t,e){try{var n=Object.defineProperty({},e,{get:function(){c[e]=!0}});t.addEventListener(e,null,n),t.removeEventListener(e,null,n)}catch(t){}}(window,"passive");var u=c,f=window,d=document,s=["mouseover","keydown","touchmove","touchend","wheel"],l=["mouseover","mouseout","touchstart","touchmove","touchend","click"],p="data-wpmeteor-",v=function(){function t(){}return t.prototype.init=function(t){var e=!1,n=!1,o=function t(o){e||(e=!0,s.forEach((function(e){return d.body.removeEventListener(e,t,u)})),clearTimeout(n),location.href.match(/wpmeteornopreload/)||r.emit("pre"),r.emit("fi"))},i=function(t){var e=new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0});return Object.defineProperty(e,"target",{writable:!1,value:t.target}),e};t<1e4&&r.on("i",(function(){e||(n=setTimeout(o,t))}));var a=[],c=function(t){t.target&&"dispatchEvent"in t.target&&("click"===t.type?(t.preventDefault(),t.stopPropagation(),a.push(i(t))):"touchmove"!==t.type&&a.push(t),t.target.setAttribute(p+t.type,!0))};r.on("l",(function(){var t;for(l.forEach((function(t){return f.removeEventListener(t,c)}));t=a.shift();){var e=t.target;e.getAttribute(p+"touchstart")&&e.getAttribute(p+"touchend")&&!e.getAttribute(p+"click")?(e.getAttribute(p+"touchmove")||(e.removeAttribute(p+"touchmove"),a.push(i(t))),e.removeAttribute(p+"touchstart"),e.removeAttribute(p+"touchend")):e.removeAttribute(p+t.type),e.dispatchEvent(t)}}));d.addEventListener("DOMContentLoaded",(function t(){s.forEach((function(t){return d.body.addEventListener(t,o,u)})),l.forEach((function(t){return f.addEventListener(t,c)})),d.removeEventListener("DOMContentLoaded",t)}))},t}(),m=document,h=m.createElement("span");h.setAttribute("id","elementor-device-mode"),h.setAttribute("class","elementor-screen-only");var y=window,b=document,g=b.documentElement,w=function(t){return t.getAttribute("class")||""},E=function(t,e){return t.setAttribute("class",e)},L=function(){window.addEventListener("load",(function(){var t=(m.body.appendChild(h),getComputedStyle(h,":after").content.replace(/"/g,"")),e=Math.max(g.clientWidth||0,y.innerWidth||0),n=Math.max(g.clientHeight||0,y.innerHeight||0),o=["_animation_"+t,"animation_"+t,"_animation","_animation","animation"];Array.from(b.querySelectorAll(".elementor-invisible")).forEach((function(t){var i=t.getBoundingClientRect();if(i.top+y.scrollY<=n&&i.left+y.scrollX<e)try{var a=JSON.parse(t.getAttribute("data-settings"));if(a.trigger_source)return;for(var c,u=a._animation_delay||a.animation_delay||0,f=0;f<o.length;f++)if(a[o[f]]){o[f],c=a[o[f]];break}if(c){var d=w(t),s="none"===c?d:d+" animated "+c,l=setTimeout((function(){E(t,s.replace(/\belementor\-invisible\b/,"")),o.forEach((function(t){return delete a[t]})),t.setAttribute("data-settings",JSON.stringify(a))}),u);r.on("fi",(function(){clearTimeout(l),E(t,w(t).replace(new RegExp("\b"+c+"\b"),""))}))}}catch(t){console.error(t)}}))}))},S=document,A="querySelectorAll",O="data-in-mega_smartmenus",_="DOMContentLoaded",j="readystatechange",P="message",k=console.error;!function(t,e,n,i,c,u,f,d,s){var l,p,m=t.constructor.name+"::",h=e.constructor.name+"::",y=function(e,n){n=n||t;for(var r=0;r<this.length;r++)e.call(n,this[r],r,this)};"NodeList"in t&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=y),"HTMLCollection"in t&&!HTMLCollection.prototype.forEach&&(HTMLCollection.prototype.forEach=y),_wpmeteor["elementor-animations"]&&L(),_wpmeteor["elementor-pp"]&&function(){var t=S.createElement("div");t.innerHTML='<span class="sub-arrow --wp-meteor"><i class="fa" aria-hidden="true"></i></span>';var e=t.firstChild;S.addEventListener("DOMContentLoaded",(function(){Array.from(S[A](".pp-advanced-menu ul")).forEach((function(t){if(!t.getAttribute(O)){(t.getAttribute("class")||"").match(/\bmega\-menu\b/)&&t[A]("ul").forEach((function(t){t.setAttribute(O,!0)}));var n=function(t){for(var e=[];t=t.previousElementSibling;)e.push(t);return e}(t),r=n.filter((function(t){return t})).filter((function(t){return"A"===t.tagName})).pop();if(r||(r=n.map((function(t){return Array.from(t[A]("a"))})).filter((function(t){return t})).flat().pop()),r){var o=e.cloneNode(!0);r.appendChild(o),new MutationObserver((function(t){t.forEach((function(t){t.addedNodes.forEach((function(t){if(1===t.nodeType&&"SPAN"===t.tagName)try{r.removeChild(o)}catch(t){}}))}))})).observe(r,{childList:!0})}}}))}))}();var b,g,w=[],E=[],x={},C=!1,T=!1,M=setTimeout;var N=e[n].bind(e),R=e[i].bind(e),H=t[n].bind(t),D=t[i].bind(t);"undefined"!=typeof EventTarget&&(b=EventTarget.prototype.addEventListener,g=EventTarget.prototype.removeEventListener,N=b.bind(e),R=g.bind(e),H=b.bind(t),D=g.bind(t));var z,q=e.createElement.bind(e),B=e.__proto__.__lookupGetter__("readyState").bind(e);Object.defineProperty(e,"readyState",{get:function(){return z||B()},set:function(t){return z=t}});var Q=function(t){return E.filter((function(e,n){var r=e[0],o=(e[1],e[2]);if(!(t.indexOf(r.type)<0)){o||(o=r.target);try{for(var i=o.constructor.name+"::"+r.type,a=0;a<x[i].length;a++){if(x[i][a])if(!W[i+"::"+n+"::"+a])return!0}}catch(t){}}})).length},W={},I=function(t){E.forEach((function(n,r){var o=n[0],i=n[1],a=n[2];if(!(t.indexOf(o.type)<0)){a||(a=o.target);try{var c=a.constructor.name+"::"+o.type;if((x[c]||[]).length)for(var u=0;u<x[c].length;u++){var f=x[c][u];if(f){var d=c+"::"+r+"::"+u;if(!W[d]){W[d]=!0,e.readyState=i;try{f.hasOwnProperty("prototype")&&f.prototype.constructor!==f?f(o):f.bind(a)(o)}catch(t){k(t,f)}}}}}catch(t){k(t)}}}))};N(_,(function(t){E.push([t,e.readyState,e])})),N(j,(function(t){E.push([t,e.readyState,e])})),H(_,(function(n){E.push([n,e.readyState,t])})),H(d,(function(n){E.push([n,e.readyState,t]),G||I([_,j,P,d])}));var J=function(n){E.push([n,e.readyState,t])};H(P,J),r.on("fi",(function(){T=!0,G=!0,e.readyState="loading",M(X)}));H(d,(function t(){C=!0,T&&!G&&(e.readyState="loading",M(X)),D(d,t)})),(new v).init(_wpmeteor.rdelay);var F=new a;F.init();var G=!1,X=function n(){var o=w.shift();if(o)if(o[c]("data-src"))o.hasAttribute("data-async")?(U(o),M(n)):U(o,n);else if("javascript/blocked"==o.type)U(o),M(n);else if(o.hasAttribute("data-wpmeteor-onload")){var i=o[c]("data-wpmeteor-onload");try{new Function(i).call(o)}catch(t){k(t)}M(n)}else M(n);else if(Q([_,j,P]))I([_,j,P]),M(n);else if(T&&C)if(Q([d,P]))I([d,P]),M(n);else{if(t.RocketLazyLoadScripts)try{RocketLazyLoadScripts.run()}catch(t){k(t)}e.readyState="complete",D(P,J),(x[m+"message"]||[]).forEach((function(t){H(P,t)})),F.unmock(),Z=N,$=R,nt=H,rt=D,G=!1,setTimeout((function(){return r.emit("l")}))}else G=!1},Y=function(t){for(var n=e.createElement("SCRIPT"),r=t.attributes,o=r.length-1;o>=0;o--)n.setAttribute(r[o].name,r[o].value);return n.bypass=!0,n.type=t.hasAttribute("data-wpmeteor-module")?"module":"text/javascript",(t.text||"").match(/^\s*class RocketLazyLoadScripts/)?n.text=t.text.replace(/^\s*class RocketLazyLoadScripts/,"window.RocketLazyLoadScripts=class").replace("RocketLazyLoadScripts.run();",""):n.text=t.text,n[f]("data-wpmeteor-after"),n},K=function(t,e){var n=t.parentNode;n&&n.replaceChild(e,t)},U=function(t,e){if(t[c]("data-src")){var r=Y(t),o=b?b.bind(r):r[n].bind(r);if(e){var i=function(){return M(e)};o(d,i),o(s,i)}r.src=t[c]("data-src"),r[f]("data-src"),K(t,r)}else"javascript/blocked"===t.type?K(t,Y(t)):onLoad&&onLoad()},V=function(t,e){var n=(x[t]||[]).indexOf(e);if(n>=0)return x[t][n]=void 0,!0},Z=function(t,e){if(e&&(t===_||t===j)){var n=h+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return N.apply(void 0,[t,e].concat(o))},$=function(t,e){t===_&&V(h+t,e);return R(t,e)};Object.defineProperties(e,((l={})[n]={get:function(){return Z},set:function(){return Z}},l[i]={get:function(){return $},set:function(){return $}},l)),r.on("pre",(function(){return w.forEach((function(t){var n=t[c]("data-src");if(n){var r=q("link");r.rel="pre"+d,r.as="script",r.href=n,r.crossorigin=!0,e.head.appendChild(r)}}))})),N(_,(function(){e.querySelectorAll("script[data-wpmeteor-after]").forEach((function(t){return w.push(t)}));var t=["link"].map((function(t){return t+"[data-wpmeteor-onload]"})).join(",");e.querySelectorAll(t).forEach((function(t){return w.push(t)}))}));var tt=function(t){if(e.currentScript)try{var n=e.currentScript.parentElement,r=e.currentScript.nextSibling,i=document.createElement("div");i.innerHTML=t,Array.from(i.childNodes).forEach((function(t){"SCRIPT"===t.nodeName?n.insertBefore(Y(t),r):n.insertBefore(t,r)}))}catch(t){console.error(t)}else k((new Date-o)/1e3,"document.currentScript not set",t)},et=function(t){return tt(t+"\n")};Object.defineProperties(e,{write:{get:function(){return tt},set:function(t){return tt=t}},writeln:{get:function(){return et},set:function(t){return et=t}}});var nt=function(t,e){if(e&&(t===d||t===_||t===P)){var n=t===_?h+t:m+t;return x[n]=x[n]||[],void x[n].push(e)}for(var r=arguments.length,o=new Array(r>2?r-2:0),i=2;i<r;i++)o[i-2]=arguments[i];return H.apply(void 0,[t,e].concat(o))},rt=function(t,e){t===d&&V(t===_?h+t:m+t,e);return D(t,e)};Object.defineProperties(t,((p={})[n]={get:function(){return nt},set:function(){return nt}},p[i]={get:function(){return rt},set:function(){return rt}},p));var ot=function(t){var e;return{get:function(){return e},set:function(n){return e&&V(t,n),x[t]=x[t]||[],x[t].push(n),e=n}}},it=ot(m+d);Object.defineProperty(t,"onload",it),N(_,(function(){Object.defineProperty(e.body,"onload",it)})),Object.defineProperty(e,"onreadystatechange",ot(h+j)),Object.defineProperty(t,"onmessage",ot(m+P));var at=1,ct=function(){--at||r.emit("i")};H(d,(function t(){M((function(){e.querySelectorAll("img").forEach((function(t){if(!t.complete&&(t.currentSrc||t.src)&&"lazy"==!(t.loading||"").toLowerCase()||(r=t.getBoundingClientRect(),o=window.innerHeight||document.documentElement.clientHeight,i=window.innerWidth||document.documentElement.clientWidth,r.top>=-1*o*1&&r.left>=-1*i*1&&r.bottom<=2*o&&r.right<=2*i)){var e=new Image;e[n](d,ct),e[n](s,ct),e.src=t.currentSrc||t.src,at++}var r,o,i})),ct()})),D(d,t)}));var ut=Object.defineProperty;Object.defineProperty=function(n,r,o){return n===t&&["jQuery","onload"].indexOf(r)>=0||(n===e||n===e.body)&&["readyState","write"].indexOf(r)>=0?n:ut(n,r,o)},Object.defineProperties=function(t,e){for(var n in e)Object.defineProperty(t,n,e[n]);return t}}(window,document,"addEventListener","removeEventListener","getAttribute",0,"removeAttribute","load","error")}]);
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=1920, initial-scale=1">
+ -->
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<link rel="alternate" hreflang="vi" href="https://kansaipaint.com.vn" />
+<link rel="alternate" hreflang="x-default" href="https://kansaipaint.com.vn" />
+
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<title>Kansai Paint - Thương Hiệu Sơn Hơn 100 Năm Đến Từ Nhật Bản</title>
+<meta name="description" content="Kansai Paint - Thương Hiệu Sơn Hơn 100 Năm Đến Từ Nhật Bản"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://kansaipaint.com.vn/" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kansai Paint - Thương Hiệu Sơn Hơn 100 Năm Đến Từ Nhật Bản" />
+<meta property="og:description" content="Kansai Paint - Thương Hiệu Sơn Hơn 100 Năm Đến Từ Nhật Bản" />
+<meta property="og:url" content="https://kansaipaint.com.vn/" />
+<meta property="og:site_name" content="KANSAI PAINT" />
+<meta property="og:updated_time" content="2024-04-22T17:16:29+07:00" />
+<meta property="og:image" content="https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg" />
+<meta property="og:image:secure_url" content="https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="kansai paint" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2024-02-27T09:46:57+07:00" />
+<meta property="article:modified_time" content="2024-04-22T17:16:29+07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kansai Paint - Thương Hiệu Sơn Hơn 100 Năm Đến Từ Nhật Bản" />
+<meta name="twitter:description" content="Kansai Paint - Thương Hiệu Sơn Hơn 100 Năm Đến Từ Nhật Bản" />
+<meta name="twitter:image" content="https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sơn Kansai" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="Less than a minute" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://kansaipaint.com.vn/#person","name":"Kansai Paint","sameAs":["https://www.facebook.com/officialkansaipaintvietnam"],"logo":{"@type":"ImageObject","@id":"https://kansaipaint.com.vn/#logo","url":"https://kansaipaint.com.vn/wp-content/uploads/2021/12/logo.png","contentUrl":"https://kansaipaint.com.vn/wp-content/uploads/2021/12/logo.png","caption":"KANSAI PAINT","inLanguage":"vi-VN","width":"233","height":"70"},"image":{"@type":"ImageObject","@id":"https://kansaipaint.com.vn/#logo","url":"https://kansaipaint.com.vn/wp-content/uploads/2021/12/logo.png","contentUrl":"https://kansaipaint.com.vn/wp-content/uploads/2021/12/logo.png","caption":"KANSAI PAINT","inLanguage":"vi-VN","width":"233","height":"70"}},{"@type":"WebSite","@id":"https://kansaipaint.com.vn/#website","url":"https://kansaipaint.com.vn","name":"KANSAI PAINT","publisher":{"@id":"https://kansaipaint.com.vn/#person"},"inLanguage":"vi-VN","potentialAction":{"@type":"SearchAction","target":"https://kansaipaint.com.vn/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg","url":"https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg","width":"1920","height":"800","inLanguage":"vi-VN"},{"@type":"WebPage","@id":"https://kansaipaint.com.vn/#webpage","url":"https://kansaipaint.com.vn/","name":"Kansai Paint - Th\u01b0\u01a1ng Hi\u1ec7u S\u01a1n H\u01a1n 100 N\u0103m \u0110\u1ebfn T\u1eeb Nh\u1eadt B\u1ea3n","datePublished":"2024-02-27T09:46:57+07:00","dateModified":"2024-04-22T17:16:29+07:00","about":{"@id":"https://kansaipaint.com.vn/#person"},"isPartOf":{"@id":"https://kansaipaint.com.vn/#website"},"primaryImageOfPage":{"@id":"https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg"},"inLanguage":"vi-VN"},{"@type":"Person","@id":"https://kansaipaint.com.vn/#author","name":"S\u01a1n Kansai","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/a21b4b471d1b29b97060a567a481e4bc?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/a21b4b471d1b29b97060a567a481e4bc?s=96&amp;d=mm&amp;r=g","caption":"S\u01a1n Kansai","inLanguage":"vi-VN"}},{"@type":"Article","headline":"Kansai Paint - Th\u01b0\u01a1ng Hi\u1ec7u S\u01a1n H\u01a1n 100 N\u0103m \u0110\u1ebfn T\u1eeb Nh\u1eadt B\u1ea3n","keywords":"kansai paint","datePublished":"2024-02-27T09:46:57+07:00","dateModified":"2024-04-22T17:16:29+07:00","author":{"@id":"https://kansaipaint.com.vn/#author","name":"S\u01a1n Kansai"},"publisher":{"@id":"https://kansaipaint.com.vn/#person"},"description":"Kansai Paint - Th\u01b0\u01a1ng Hi\u1ec7u S\u01a1n H\u01a1n 100 N\u0103m \u0110\u1ebfn T\u1eeb Nh\u1eadt B\u1ea3n","name":"Kansai Paint - Th\u01b0\u01a1ng Hi\u1ec7u S\u01a1n H\u01a1n 100 N\u0103m \u0110\u1ebfn T\u1eeb Nh\u1eadt B\u1ea3n","@id":"https://kansaipaint.com.vn/#richSnippet","isPartOf":{"@id":"https://kansaipaint.com.vn/#webpage"},"image":{"@id":"https://kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg"},"inLanguage":"vi-VN","mainEntityOfPage":{"@id":"https://kansaipaint.com.vn/#webpage"}}]}</script>
+<meta name="google-site-verification" content="O2qe0GLgI61dAKZfwyPhgxoYNEOdMmRKTT6fjERZ7MM" />
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="KANSAI PAINT &raquo; Feed" href="https://kansaipaint.com.vn/feed/" />
+<link rel="alternate" type="application/rss+xml" title="KANSAI PAINT &raquo; Comments Feed" href="https://kansaipaint.com.vn/comments/feed/" />
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kansaipaint.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='astra-theme-css-css' href='https://kansaipaint.com.vn/wp-content/themes/astra/assets/css/minified/main.min.css?ver=3.9.1' media='all' />
+<link rel='stylesheet' id='astra-theme-dynamic-css' href='https://kansaipaint.com.vn/wp-content/uploads/astra/astra-theme-dynamic-css-post-12300.css?ver=1729569758' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='rank-math-toc-block-style-inline-css'>
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") " ";counter-increment:item}
+
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--ast-global-color-0: var(--ast-global-color-0);--wp--preset--color--ast-global-color-1: var(--ast-global-color-1);--wp--preset--color--ast-global-color-2: var(--ast-global-color-2);--wp--preset--color--ast-global-color-3: var(--ast-global-color-3);--wp--preset--color--ast-global-color-4: var(--ast-global-color-4);--wp--preset--color--ast-global-color-5: var(--ast-global-color-5);--wp--preset--color--ast-global-color-6: var(--ast-global-color-6);--wp--preset--color--ast-global-color-7: var(--ast-global-color-7);--wp--preset--color--ast-global-color-8: var(--ast-global-color-8);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: var(--wp--custom--ast-content-width-size);--wp--style--global--wide-size: var(--wp--custom--ast-wide-width-size); }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 2em; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 2em; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 2em;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 2em;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 2em;}:root :where(.is-layout-grid){gap: 2em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-color{color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-color{color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-color{color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-color{color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-color{color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-color{color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-color{color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-color{color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-color{color: var(--wp--preset--color--ast-global-color-8) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-background-color{background-color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-background-color{background-color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-background-color{background-color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-background-color{background-color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-background-color{background-color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-background-color{background-color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-background-color{background-color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-background-color{background-color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-background-color{background-color: var(--wp--preset--color--ast-global-color-8) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-ast-global-color-0-border-color{border-color: var(--wp--preset--color--ast-global-color-0) !important;}.has-ast-global-color-1-border-color{border-color: var(--wp--preset--color--ast-global-color-1) !important;}.has-ast-global-color-2-border-color{border-color: var(--wp--preset--color--ast-global-color-2) !important;}.has-ast-global-color-3-border-color{border-color: var(--wp--preset--color--ast-global-color-3) !important;}.has-ast-global-color-4-border-color{border-color: var(--wp--preset--color--ast-global-color-4) !important;}.has-ast-global-color-5-border-color{border-color: var(--wp--preset--color--ast-global-color-5) !important;}.has-ast-global-color-6-border-color{border-color: var(--wp--preset--color--ast-global-color-6) !important;}.has-ast-global-color-7-border-color{border-color: var(--wp--preset--color--ast-global-color-7) !important;}.has-ast-global-color-8-border-color{border-color: var(--wp--preset--color--ast-global-color-8) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpml-blocks-css' href='https://kansaipaint.com.vn/wp-content/plugins/sitepress-multilingual-cms/dist/css/blocks/styles.css?ver=4.6.8' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://kansaipaint.com.vn/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.6' media='all' />
+<link rel='stylesheet' id='astra-contact-form-7-css' href='https://kansaipaint.com.vn/wp-content/themes/astra/assets/css/minified/compatibility/contact-form-7-main.min.css?ver=3.9.1' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://kansaipaint.com.vn/wp-includes/css/dashicons.min.css?ver=6.6.2' media='all' />
+<link rel='stylesheet' id='post-views-counter-frontend-css' href='https://kansaipaint.com.vn/wp-content/plugins/post-views-counter/css/frontend.css?ver=1.3.11' media='all' />
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css' href='https://kansaipaint.com.vn/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1' media='all' />
+<link rel='stylesheet' id='k2_kinhdo-add-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3Awght%40100%2C300%2C400%2C500%2C700%2C900%26display%3Dswap&#038;subset=latin%2Clatin-ext' media='all' />
+<link rel='stylesheet' id='fonts-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/fonts.css?ver=4.7.1' media='screen' />
+<link rel='stylesheet' id='animate-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/animate.css?ver=4.7.1' media='screen' />
+<link rel='stylesheet' id='bootstrap-css-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/bootstrap.min.css?ver=4.7.1' media='screen' />
+<link rel='stylesheet' id='swiper-css' href='https://kansaipaint.com.vn/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/fancybox.css?ver=8.0.7' media='all' />
+<link rel='stylesheet' id='select2-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/select2.min.css?ver=8.0.7' media='all' />
+<link rel='stylesheet' id='k2_kinhdo-theme-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/theme.min.css?ver=1.1.5' media='all' />
+<link rel='stylesheet' id='wpp-comment-rating-styles-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/assets/css/style_rate.css?ver=6.6.2' media='all' />
+<link rel='stylesheet' id='astra-addon-css-css' href='https://kansaipaint.com.vn/wp-content/uploads/astra-addon/astra-addon-66b2fbc208dd61-28612077.css?ver=3.6.8' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://kansaipaint.com.vn/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.18.3' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://kansaipaint.com.vn/wp-content/uploads/elementor/css/post-5.css?ver=1717386053' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://kansaipaint.com.vn/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.15.0' media='all' />
+<link rel='stylesheet' id='uael-frontend-css' href='https://kansaipaint.com.vn/wp-content/plugins/ultimate-elementor/assets/min-css/uael-frontend.min.css?ver=1.36.6' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://kansaipaint.com.vn/wp-content/uploads/elementor/css/global.css?ver=1717386054' media='all' />
+<link rel='stylesheet' id='elementor-post-49-css' href='https://kansaipaint.com.vn/wp-content/uploads/elementor/css/post-49.css?ver=1717386054' media='all' />
+<link rel='stylesheet' id='elementor-post-57-css' href='https://kansaipaint.com.vn/wp-content/uploads/elementor/css/post-57.css?ver=1717386055' media='all' />
+<link rel='stylesheet' id='elementor-post-3086-css' href='https://kansaipaint.com.vn/wp-content/uploads/elementor/css/post-3086.css?ver=1717386055' media='all' />
+<link rel='stylesheet' id='kansai-paint-theme-css-css' href='https://kansaipaint.com.vn/wp-content/themes/k8/style.css?ver=1.0.0' media='all' />
+<!--[if IE]>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=3.9.1" id="astra-flexibility-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="astra-flexibility-js-after">
+flexibility(document.documentElement);
+</script>
+<![endif]-->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://kansaipaint.com.vn/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://kansaipaint.com.vn/wp-json/wp/v2/pages/12300" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kansaipaint.com.vn/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.2" />
+<link rel='shortlink' href='https://kansaipaint.com.vn/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://kansaipaint.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkansaipaint.com.vn%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://kansaipaint.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkansaipaint.com.vn%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.6.8 stt:1,57;" />
+<meta name="generator" content="Elementor 3.18.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">!function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz", "acrqivhgjcnonyexhluy")</script>
+<!-- Google tag (gtag.js) -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://www.googletagmanager.com/gtag/js?id=AW-11106809113"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11106809113');
+</script>
+<!-- Event snippet for Zalo conversion page -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11106809113/ZCfICNju3o8YEJnqkbAp',
+      'transaction_id': ''
+  });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://www.googletagmanager.com/gtag/js?id=AW-11106809113"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11106809113');
+</script>
+
+<!-- Event snippet for Zalo conversion page -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11106809113/ZCfICNju3o8YEJnqkbAp',
+      'transaction_id': ''
+  });
+</script>
+<!-- Google tag (gtag.js) -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://www.googletagmanager.com/gtag/js?id=G-LZN9R17F8S"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LZN9R17F8S');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-async data-src="https://www.googletagmanager.com/gtag/js?id=G-RM3Y35F2XZ"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RM3Y35F2XZ');
+</script>
+
+<!-- Google Tag Manager -->
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVL6J47');</script>
+<!-- End Google Tag Manager -->
+<meta name="generator" content="Powered by Slider Revolution 6.6.19 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://kansaipaint.com.vn/wp-content/uploads/2022/01/favicon.jpg" sizes="32x32" />
+<link rel="icon" href="https://kansaipaint.com.vn/wp-content/uploads/2022/01/favicon.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kansaipaint.com.vn/wp-content/uploads/2022/01/favicon.jpg" />
+<meta name="msapplication-TileImage" content="https://kansaipaint.com.vn/wp-content/uploads/2022/01/favicon.jpg" />
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+		<style id="wp-custom-css">
+			@media (max-width: 991px ) {
+	.sha-header .site-header .header-content.menu-active {
+		overflow: scroll;
+	}
+}
+
+
+.page-supports .wpcf7 {
+    background-color: #f2f2f2;
+    border: 1px solid #69727d;
+    border-radius: 30px;
+    padding: 30px 30px 10px 30px;
+    max-width:450px;
+}
+
+.page-supports .wpcf7 h3 {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.page-supports .wpcf7 input {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #69727d;
+    padding: 0 15px
+}
+
+.page-supports .wpcf7 textarea {
+    height: 100px;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 1px solid #69727d
+}
+
+.page-supports .wpcf7 p {
+    margin-bottom: 16px
+}
+
+.page-supports .wpcf7 .sub,
+.page-supports .wpcf7 .subs {
+    text-align: center;
+    position: relative
+}
+
+.page-supports .wpcf7 .sub p,
+.page-supports .wpcf7 .subs p {
+    margin: 0;
+    text-align: center;
+}
+
+.page-supports .wpcf7 .sub input,
+.page-supports .wpcf7 .subs input {
+    width: auto;
+    background-color: #be1e2d;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    transition: all .25s ease 0s
+}
+
+.page-supports .wpcf7 .sub input:hover,
+.page-supports .wpcf7 .subs input:hover {
+    background-color: #002666
+}
+
+.page-supports .wpcf7 .sub .wpcf7-spinner,
+.page-supports .wpcf7 .subs .wpcf7-spinner {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}		</style>
+		</head>
+
+<body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="home page-template page-template-page-templates page-template-home page-template-page-templateshome-php page page-id-12300 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.9.1 elementor-default elementor-kit-5 elementor-page elementor-page-12300 astra-addon-3.6.8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVL6J47"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+    function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + '; Path=/; expires=' + expires.toUTCString();
+    }
+</script>
+
+<a
+	class="skip-link screen-reader-text"
+	href="#content"
+	role="link"
+	title="Skip to content">
+		Skip to content</a>
+
+<div
+class="hfeed site" id="page">
+		<div class="sha-header">
+		<header id="masthead">
+		    <div class="header-mains">
+		        <div class="container">
+		            <div class="site-header">
+
+		                <div class="logo">
+		                    		                    <a href="https://kansaipaint.com.vn/">
+		                        <img src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/images/logo.png" alt="">
+		                    </a>
+		                    		                        <h1 style="display: none;">KANSAI PAINT</h1>
+		                    		                </div>
+		                
+		                <div class="header-content">
+		                    <ul id="menu-main-menu" class="primary-menu"><li id="menu-item-13747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13747"><a href="https://kansaipaint.com.vn/ve-chung-toi-2/" class="menu-link">Về Chúng Tôi</a></li>
+<li id="menu-item-10176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10176"><a href="https://kansaipaint.com.vn/cong-trinh-tieu-bieu2/" class="menu-link">Công trình</a></li>
+<li id="menu-item-1545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1545"><a href="https://kansaipaint.com.vn/tong-hop-san-pham/" class="menu-link">Sản Phẩm<span role="presentation" class="dropdown-menu-toggle" ></span></a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"/>
+                </svg></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-10252" class="menu-item menu-item-type-taxonomy menu-item-object-danh_muc_san_pham menu-item-10252"><a href="https://kansaipaint.com.vn/danh-muc-san-pham/son-noi-that/" class="menu-link">SƠN NỘI THẤT</a></li>
+	<li id="menu-item-10251" class="menu-item menu-item-type-taxonomy menu-item-object-danh_muc_san_pham menu-item-10251"><a href="https://kansaipaint.com.vn/danh-muc-san-pham/son-ngoai-that/" class="menu-link">SƠN NGOẠI THẤT</a></li>
+	<li id="menu-item-10249" class="menu-item menu-item-type-taxonomy menu-item-object-danh_muc_san_pham menu-item-10249"><a href="https://kansaipaint.com.vn/danh-muc-san-pham/son-chong-tham/" class="menu-link">SƠN CHỐNG THẤM</a></li>
+	<li id="menu-item-10248" class="menu-item menu-item-type-taxonomy menu-item-object-danh_muc_san_pham menu-item-10248"><a href="https://kansaipaint.com.vn/danh-muc-san-pham/bot-trets/" class="menu-link">BỘT TRÉT</a></li>
+	<li id="menu-item-10250" class="menu-item menu-item-type-taxonomy menu-item-object-danh_muc_san_pham menu-item-10250"><a href="https://kansaipaint.com.vn/danh-muc-san-pham/son-du-an/" class="menu-link">SƠN DỰ ÁN</a></li>
+</ul>
+</li>
+<li id="menu-item-10177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10177"><a href="https://kansaipaint.com.vn/kham-pha-mau-sac/" class="menu-link">Khám phá màu sắc</a></li>
+<li id="menu-item-11062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11062"><a href="https://kansaipaint.com.vn/ho-tro/" class="menu-link">Hỗ trợ<span role="presentation" class="dropdown-menu-toggle" ></span></a><button class="ast-menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu Toggle</span><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"/>
+                </svg></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-10330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10330"><a href="https://kansaipaint.com.vn/dai-ly/" class="menu-link">Thông tin đại lý Kansai</a></li>
+	<li id="menu-item-10329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10329"><a href="https://kansaipaint.com.vn/nha-thau-kansai/" class="menu-link">Nhà thầu Kansai</a></li>
+	<li id="menu-item-10328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10328"><a href="https://kansaipaint.com.vn/lien-he-mo-dai-ly/" class="menu-link">Liên hệ mở đại lý</a></li>
+	<li id="menu-item-10327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10327"><a href="https://kansaipaint.com.vn/quy-du-an-cong-dong/" class="menu-link">Quỹ dự án cộng đồng</a></li>
+</ul>
+</li>
+<li id="menu-item-10184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10184"><a href="https://kansaipaint.com.vn/tin-tuc/" class="menu-link">Tin Tức</a></li>
+</ul>
+	                        <div class="w-info">
+	                        	<div class="w-s-lang">
+				                    <div class="w-search">
+				                        <a href="#">
+				                            <i class="fa fa-search" aria-hidden="true"></i>
+				                        </a>
+
+				                        <div class="search-form">
+				                            <div class="form-row-search">
+				                                <form role="search" method="get" id="head_search" action="https://kansaipaint.com.vn/">
+				                                    <input type="text" placeholder="Tìm kiếm..." name="s" class="search-field" />
+				                                    <!-- <input type="hidden" name="post_type" value="post"> -->
+				                                    <button type="submit" class="btn-primary search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+				                                </form>
+				                            </div>
+				                        </div>
+				                    </div>
+				                    <div class="w-lang hidden-sm hidden-xs">				                    	
+				                        					                    	<div id="google_translate_element"></div>
+											   	<script  data-wpmeteor-after="REORDER" type="javascript/blocked"> 
+											        function googleTranslateElementInit() { 
+											        	//setCookie('googtrans', '/vi/en', 1);
+											        	//setCookie('googtrans', '/vi/vi', 1);
+											            new google.translate.TranslateElement(
+											                {
+											                	pageLanguage: 'vi',
+											                	includedLanguages: 'vi,en',
+											                }, 
+											                'google_translate_element'
+											            ); 
+											        }
+											    </script>
+												<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+					                        <div class="show-lang">
+					                            					                            <ul>
+					                                <li id="sha-vi" class="active"><img src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/images/f_vn.png" alt="flag vn"></li>
+					                                <li id="sha-en" class=""><img src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/images/f_eng.png" alt="flag eng"></li>
+					                            </ul>
+					                        </div>
+					                    	<div class="drop-lang">
+					                            <button>
+					                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+					                            </button>
+					                            
+												<div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
+													<ul>
+														<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal"><a href="https://kansaipaint.com.vn/" class="sha-ls-link" data-lang="en"><span class="wpml-ls-display"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">English</font></font></span></a>
+														</li>
+														<li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-vi wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+															<a href="https://kansaipaint.com.vn/" class="sha-ls-link" data-lang="vi"><span class="wpml-ls-native"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vietnamese</font></font></span></a>
+														</li>
+													</ul>
+												</div>
+					                        </div>
+					                    				                    </div>
+				                </div>
+	                        </div>
+		                </div>
+
+		                <div class="header_menu hidden-md hidden-lg">
+		                    <span class="btn-nav-mobile">
+		                        <span></span>
+		                    </span>
+		                </div> 
+		            </div>
+		        </div>
+		    </div>
+		</header>
+	</div>
+		<div id="content" class="site-content">
+		
+		
+				<div class="ast-container">
+		<div class="page-home">
+        <div class="home-video">
+        
+			<!-- START Slider 1 REVOLUTION SLIDER 6.6.19 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_1_1" style="" data-version="6.6.19">
+					<rs-slides style="overflow: hidden; position: absolute;">
+						<rs-slide style="position: absolute;" data-key="rs-1" data-title="Slide" data-in="o:0;" data-out="a:false;">
+							<img fetchpriority="high" src="//kansaipaint.com.vn/wp-content/plugins/revslider/public/assets/assets/dummy.png" alt="" title="Kansai-1920&#215;800-1_1.jpeg" width="1920" height="800" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="//kansaipaint.com.vn/wp-content/uploads/revslider/video-media/Kansai-1920x800-1_1.jpeg" data-no-retina>
+							<rs-bgvideo 
+								data-video="w:100%;h:100%;nse:false;rwd:false;l:true;ptimer:false;vfc:false;"
+								data-mp4="//kansaipaint.com.vn/wp-content/uploads/2024/02/Kansai-1920x800-1.mp4"
+							></rs-bgvideo>
+<!---->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+					setREVStartSize({c: 'rev_slider_1_1',rl:[1240,1024,778,480],el:[800],gw:[1920],gh:[800],type:'standard',justify:'',layout:'fullwidth',mh:"0"});if (window.RS_MODULES!==undefined && window.RS_MODULES.modules!==undefined && window.RS_MODULES.modules["revslider11"]!==undefined) {window.RS_MODULES.modules["revslider11"].once = false;window.revapi1 = undefined;if (window.RS_MODULES.checkMinimal!==undefined) window.RS_MODULES.checkMinimal()}
+				</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+    </div>
+    
+    <div class="home-count">
+        <div class="w-im">
+            <img class="hidden-xs" src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/images/home_count_pc.png" alt="home_count_pc">
+            <img class="hidden-sm hidden-md hidden-lg" src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/images/home_count_mb.png" alt="home_count_mb">
+        </div>
+
+        <div class="w-item w-his">
+            <div class="num"><span class="count-up">100</span></div>
+            <span class="titles">NĂM</span>
+            <p>Lịch sử</p>
+        </div>
+
+                <div class="w-item w-top vi-vi">
+            <span class="titles">VỊ TRÍ</span>
+                                <div class="num">0<span class="count-up">6</span></div>
+                                <p>Trên thế giới</p>
+        </div>
+
+        <div class="w-item w-left1 vi-vi">
+            <div class="num"><span class="count-up">3.9</span></div>
+            <span class="titles">TỶ USD</span>
+            <p>Doanh thu hằng năm</p>
+        </div>
+
+        <div class="w-item w-left2">
+            <div class="num"><span class="count-up">108</span></div>
+            <span class="titles">CÔNG TY THÀNH VIÊN</span>
+            <p>và liên kết hằng năm</p>
+        </div>
+
+        <div class="w-item w-right1 vi-vi">
+            <div class="num"><span class="count-up">23</span>%</div>
+            <span class="titles">THỊ PHẦN</span>
+            <p>Thị trường sơn tại Nhật Bản</p>
+        </div>
+
+        <div class="w-item w-right2">
+            <div class="num"><span class="count-up">70</span></div>
+            <span class="titles">QUỐC GIA</span>
+            <p>Hiện diện thương hiệu Kansai Paint</p>
+        </div>
+    </div>
+
+    <div class="home-about">
+        <div class="container-fluid">
+            <div class="about-top">
+                <h2>KANSAI PAINT</h2>
+                <h3>THƯƠNG HIỆU SƠN HƠN 100 NĂM ĐẾN TỪ NHẬT BẢN</h3>
+                <p>Kansai Paint là một trong những tập đoàn sản xuất vật liệu phủ lớn nhất thế giới. Được thành lập từ năm 1918, sau hơn 100 năm. Kansai Paint đã trở thành một biểu tượng trong ngành sơn và hoá chất với nhiều dấu ấn đậm nét tại các công trình thế kỷ.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="img-top wow animate__fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/04/home_a_1_03.png" alt="">
+                </div>
+                <div class="img-middle wow animate__zoomIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/04/home_a2_03.png" alt="">
+                </div>
+                <div class="img-bottom wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/04/home_a2_07.png" alt="">
+                </div>
+
+                
+                <div class="about-more">
+                    <a class="wow animate__pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="1.5s" href="https://kansaipaint.com.vn/ho-tro/">TƯ VẤN MIỄN PHÍ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-color">
+        <div class="color-image">
+            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/04/home_c_image.png" alt="c_image">
+        </div>
+
+        <div class="color-content">
+            <h2><a href="https://kansaipaint.com.vn/kham-pha-mau-sac/">EXPLORE PAINT colors</a></h2>
+            <p class="room-1 wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Office</p>
+            <p class="room-2 wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">Bedroom</p>
+            <p class="room-3 wow animate__fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">Kidroom</p>
+            <p class="room-4 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Kitchen room</p>
+            <p class="room-5 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Living room</p>
+            <p class="room-6 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">Dining room</p>
+        </div>
+    </div>
+
+        <div class="home-green2">
+        <div class="home-green-content">
+            <div class="container">
+                <div class="green-content">
+                    <p>Sản phẩm sơn Kansai đã được cấp chứng nhận Xanh Singapore Green Label bởi Hội đồng vì môi trường Singapore (The Singapore Environment Council). Nhãn Xanh Singapore đã gia nhập hàng ngũ của Mạng lưới Ghi nhãn Sinh thái Toàn cầu (GEN) vào năm 1994.</p>
+<p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <div class="green-im">
+            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/03/green.png" alt="bg_def">
+        </div>
+    </div>
+
+    <div class="home-build">
+        <div class="container">
+            <div class="home-titles">
+                <h2>CÔNG TRÌNH</h2>
+            </div>
+        </div>
+
+        <div class="items">
+                                    <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-28.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-27.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-26.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-24.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-23.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-22.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-21.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                                <div class="item">
+                            <a href="">
+                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/02/Thiet-ke-chua-co-ten-30.png" alt="value_c_items">
+                            </a>
+                        </div>
+                                </div>
+    </div>
+
+    <div class="home-forms">
+        <div class="container">
+            <div class="form-w">
+                
+<div class="wpcf7 no-js" id="wpcf7-f13587-o1" lang="vi-VN" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/#wpcf7-f13587-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="13587" />
+<input type="hidden" name="_wpcf7_version" value="5.8.6" />
+<input type="hidden" name="_wpcf7_locale" value="vi_VN" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f13587-o1" />
+<input type="hidden" name="_wpcf7_container_post" value="0" />
+<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+</div>
+<div class="form-home">
+	<h3>LIÊN HỆ VỚI CHÚNG TÔI
+	</h3>
+	<div class="w-form">
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<p><span class="wpcf7-form-control-wrap" data-name="text-1"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Họ và tên" value="" type="text" name="text-1" /></span>
+				</p>
+			</div>
+			<div class="col-12 col-lg-6">
+				<p><span class="wpcf7-form-control-wrap" data-name="tel-1"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Số điện thoại" value="" type="tel" name="tel-1" /></span>
+				</p>
+			</div>
+			<div class="col-12">
+				<p><span class="wpcf7-form-control-wrap" data-name="text-2"><input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email" value="" type="text" name="text-2" /></span>
+				</p>
+			</div>
+			<div class="col-12">
+				<p><span class="wpcf7-form-control-wrap" data-name="text-3"><input size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Địa chỉ" value="" type="text" name="text-3" /></span>
+				</p>
+			</div>
+			<div class="col-12">
+				<p><span class="wpcf7-form-control-wrap" data-name="textarea-545"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Câu hỏi của bạn?" name="textarea-545"></textarea></span>
+				</p>
+			</div>
+			<div class="sub">
+				<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="TƯ VẤN NGAY" />
+				</p>
+			</div>
+		</div>
+	</div>
+</div><div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-blog">
+        <div class="container">
+            <div class="home-titles">
+                <h2>TIN TỨC</h2>
+            </div>
+
+            <div class="blog-items">
+                  
+                        <div class="w-item">
+                            <div class="blog-item">
+                                <div class="item-image">
+                                    <a href="https://kansaipaint.com.vn/huong-dan-di-chuyen-ban-tho-de-son-nha-chuan/">
+                                                                                    
+                                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/10/di-chuyen-ban-tho-de-son-nha-2.png">
+                                                                            </a>
+                                </div>
+                                <div class="tintuc-info">
+                                    <h3 class="h4"><a href="https://kansaipaint.com.vn/huong-dan-di-chuyen-ban-tho-de-son-nha-chuan/">Hướng Dẫn Thủ Tục Di Chuyển Bàn Thờ Để Sơn Nhà Chuẩn Chỉnh </a></h3>
+                                    <p class="excerpt">Việc di chuyển bàn thờ để sơn nhà là một công việc quan trọng, không chỉ liên quan đến vấn đề vật chất, thẩm mỹ mà còn ảnh hưởng tới&hellip;</p>
+                                    <div class="tintuc-meta-bottom">
+                                        <a class="read-more" href="https://kansaipaint.com.vn/huong-dan-di-chuyen-ban-tho-de-son-nha-chuan/">
+                                                                                        
+                                                
+                                                Xem thêm
+                                                </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                              
+                        <div class="w-item">
+                            <div class="blog-item">
+                                <div class="item-image">
+                                    <a href="https://kansaipaint.com.vn/gia-dap-son-chong-tham-pha-xi-mang-co-tot-khong/">
+                                                                                    
+                                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/10/son-chong-tham-pha-xi-mang-co-tot-khong-1.png">
+                                                                            </a>
+                                </div>
+                                <div class="tintuc-info">
+                                    <h3 class="h4"><a href="https://kansaipaint.com.vn/gia-dap-son-chong-tham-pha-xi-mang-co-tot-khong/">【Giải Đáp Thắc Mắc】Sơn Chống Thấm Pha Xi Măng Có Tốt Không?</a></h3>
+                                    <p class="excerpt">Sơn chống thấm pha xi măng là một trong những giải pháp phổ biến và hiệu quả được nhiều người lựa chọn trong các công trình kiến trúc hiện nay.&hellip;</p>
+                                    <div class="tintuc-meta-bottom">
+                                        <a class="read-more" href="https://kansaipaint.com.vn/gia-dap-son-chong-tham-pha-xi-mang-co-tot-khong/">
+                                                                                        
+                                                
+                                                Xem thêm
+                                                </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                              
+                        <div class="w-item">
+                            <div class="blog-item">
+                                <div class="item-image">
+                                    <a href="https://kansaipaint.com.vn/dinh-mu-1-thung-son-epoxy-son-duoc-bao-nhieu-m2/">
+                                                                                    
+                                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/10/1-thung-son-epoxy-son-duoc-bao-nhieu-m2-2.png">
+                                                                            </a>
+                                </div>
+                                <div class="tintuc-info">
+                                    <h3 class="h4"><a href="https://kansaipaint.com.vn/dinh-mu-1-thung-son-epoxy-son-duoc-bao-nhieu-m2/">【Định Mức】1 Thùng Sơn Epoxy Sơn Được Bao Nhiêu M2</a></h3>
+                                    <p class="excerpt">Khi thi công sơn sàn Epoxy cho nhà xưởng công nghiệp thì việc xác định chính xác lượng sơn cần thiết là bước vô cùng quan trọng. Điều này giúp&hellip;</p>
+                                    <div class="tintuc-meta-bottom">
+                                        <a class="read-more" href="https://kansaipaint.com.vn/dinh-mu-1-thung-son-epoxy-son-duoc-bao-nhieu-m2/">
+                                                                                        
+                                                
+                                                Xem thêm
+                                                </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                              
+                        <div class="w-item">
+                            <div class="blog-item">
+                                <div class="item-image">
+                                    <a href="https://kansaipaint.com.vn/gd-thac-mac-truoc-khi-son-tuong-can-lam-gi/">
+                                                                                    
+                                            <img src="https://kansaipaint.com.vn/wp-content/uploads/2024/10/truoc-khi-son-nha-can-lam-gi-9.png">
+                                                                            </a>
+                                </div>
+                                <div class="tintuc-info">
+                                    <h3 class="h4"><a href="https://kansaipaint.com.vn/gd-thac-mac-truoc-khi-son-tuong-can-lam-gi/">【Giải Đáp Thắc Mắc】Trước Khi Sơn Tường Cần Làm Gì?</a></h3>
+                                    <p class="excerpt">Bạn có biết rằng, bước chuẩn bị trước khi sơn tường có thể quyết định đến 80% độ bền và thẩm mỹ của căn nhà sau này? Một bức tường&hellip;</p>
+                                    <div class="tintuc-meta-bottom">
+                                        <a class="read-more" href="https://kansaipaint.com.vn/gd-thac-mac-truoc-khi-son-tuong-can-lam-gi/">
+                                                                                        
+                                                
+                                                Xem thêm
+                                                </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                                    </div>
+        </div>
+    </div>
+</div>
+	</div> <!-- ast-container -->
+	</div><!-- #content -->
+
+<footer class="sha-footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-xl-5">
+					<div class="col-log-social">
+						<div class="footer-logo">
+							<a href="https://kansaipaint.com.vn">
+								<img src="https://kansaipaint.com.vn/wp-content/uploads/2021/12/logo-dark.png" alt="logo">
+							</a>
+
+							<p></p>
+						</div>
+
+						<div class="footer-social">
+							<p>Kết nối với chúng tôi:</p>
+							<ul>
+																		<li><a href="https://www.facebook.com/officialkansaipaintvietnam"><img src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/fb.png" alt=""></a></li>
+																				<li><a href="https://www.youtube.com/@kansaipaintvietnam"><img src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/yt.png" alt=""></a></li>
+																				<li><a href="https://zalo.me/918744844993182752?fbclid=IwAR14UDVhYLyp999km0T70Dl-7KVIU9Ve99uiKx2O53blxk2kLJShRhfBMXs"><img src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/zalo.png" alt=""></a></li>
+																	</ul>
+						</div>
+
+						<div class="footer-global align-items-center justify-content-xs-start justify-content-sm-start">
+							<p>Kansai Paint Global Website</p>
+							<div class="global-content"><p><a href="#123"><img decoding="async" class="alignnone size-full wp-image-8659" src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/global.png" alt="" width="50" height="50" /></a></p>
+</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-6 col-xl-3">
+					<div class="footer-link">
+						<p class="footer-title">Danh mục</p>
+						<ul>
+<li><a href="https://kansaipaint.com.vn/tong-hop-san-pham/">Sản Phẩm</a></li>
+<li><a href="https://kansaipaint.com.vn/kham-pha-mau-sac/">Khám Phá Màu Sắc</a></li>
+<li><a href="https://kansaipaint.com.vn/tin-tuc/">Tin Tức</a></li>
+<li><a href="https://kansaipaint.com.vn/dai-ly/">Hỗ Trợ</a></li>
+</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-6 col-xl-4">
+					<div class="footer-info">
+						<p class="footer-title">Thông tin liên hệ</p>
+						<ul>
+																<li><img src="" alt="">CÔNG TY TNHH SƠN KANSAI VIỆT NAM</li>
+																		<li><img src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/i1.png" alt="">Địa chỉ : Khu công nghiệp phố nối A - Trưng Trắc - Văn Lâm - Hưng Yên</li>
+																		<li><img src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/i2.png" alt="">Hotline: 1900 88 68 62</li>
+																		<li><img src="https://kansaipaint.com.vn/wp-content/uploads/2024/01/i3.png" alt="">Email: cskh@kansaipaint.com.vn</li>
+															</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div><!-- #page -->
+
+		<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+				<div data-elementor-type="popup" data-elementor-id="3086" class="elementor elementor-3086 elementor-location-popup" data-elementor-settings="{&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+								<section class="elementor-section elementor-top-section elementor-element elementor-element-7b39c07 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7b39c07" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8260d9c" data-id="8260d9c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f1ea150 elementor-skin-slideshow elementor-arrows-yes elementor-widget elementor-widget-media-carousel" data-id="f1ea150" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;slideshow&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://kansaipaint.com.vn/wp-content/plugins/elementor-pro/assets/css/widget-carousel.min.css">		<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper-container">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="mau-son-ngoai-that-cho-nguoi-menh-thuy" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/mau-son-ngoai-that-cho-nguoi-menh-thuy.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="cach-phoi-mau-son-nha-xanh-coban-y-nghia-son-mau-xanh-coban-sonnuoctoanquoc-add" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/cach-phoi-mau-son-nha-xanh-coban-y-nghia-son-mau-xanh-coban-sonnuoctoanquoc-add.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="Blue-walls" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/Blue-walls.png&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="son-ngoai-that-xanh-lam" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/son-ngoai-that-xanh-lam.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="son-nha-mau-xanh-18-777x437" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/son-nha-mau-xanh-18-777x437-1.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="son-nha-mau-xanh-da-troi" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/son-nha-mau-xanh-da-troi.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="xanh-ngoc" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/xanh-ngoc.jpg&#039;)">
+
+			
+					</div>
+								</div>
+									</div>
+																				<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+				<div class="elementor-swiper">
+			<div class="elementor-thumbnails-swiper swiper-container">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="mau-son-ngoai-that-cho-nguoi-menh-thuy" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/mau-son-ngoai-that-cho-nguoi-menh-thuy.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="cach-phoi-mau-son-nha-xanh-coban-y-nghia-son-mau-xanh-coban-sonnuoctoanquoc-add" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/cach-phoi-mau-son-nha-xanh-coban-y-nghia-son-mau-xanh-coban-sonnuoctoanquoc-add.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="Blue-walls" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/Blue-walls.png&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="son-ngoai-that-xanh-lam" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/son-ngoai-that-xanh-lam.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="son-nha-mau-xanh-18-777x437" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/son-nha-mau-xanh-18-777x437-1.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="son-nha-mau-xanh-da-troi" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/son-nha-mau-xanh-da-troi.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="xanh-ngoc" style="background-image: url(&#039;https://kansaipaint.com.vn/wp-content/uploads/2022/08/xanh-ngoc.jpg&#039;)">
+
+			
+					</div>
+								</div>
+									</div>
+																					</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+<link rel='stylesheet' id='rs-plugin-settings-css' href='https://kansaipaint.com.vn/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.19' media='all' />
+<style id='rs-plugin-settings-inline-css'>
+#rs-demo-id {}
+</style>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="astra-theme-js-js-extra">
+var astra = {"break_point":"921","isRtl":""};
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=3.9.1" id="astra-theme-js-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.6" id="swv-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/kansaipaint.com.vn\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.6" id="contact-form-7-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.19" data-defer data-async id="tp-tools-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.19" data-defer data-async id="revmin-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/select2.min.js?ver=8.0.7" id="select2-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/fabric.min.js?ver=8.0.7" id="fabric.min-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/jquery.slimscroll.js?ver=8.0.7" id="slimscroll-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/theia-sticky-sidebar.min.js?ver=8.0.7" id="theia-sticky-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/swiper-bundle.min.js?ver=8.0.7" id="swiper-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/bootstrap.min.js?ver=1.1.1" id="bootstrap-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/waypoints.min.js?ver=1.0.1" id="waypoints-js-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/jquery.countup.js?ver=1.0.1" id="countup-js-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/wow.js?ver=3.0.6" id="wow-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/comment-reply.min.js?ver=6.6.2" id="comment-reply-js" data-async data-wp-strategy="async"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="k2_kinhdo-main-js-extra">
+var j_data = {"a_u":"https:\/\/kansaipaint.com.vn\/wp-admin\/admin-ajax.php"};
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/themes/k8/assets/js/main.js?ver=0.0.6" id="k2_kinhdo-main-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="astra-addon-js-js-extra">
+var astraAddon = {"sticky_active":"","svgIconClose":"<span class=\"ast-icon icon-close\"><svg viewBox=\"0 0 512 512\" aria-hidden=\"true\" role=\"img\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" width=\"18px\" height=\"18px\">\n                                <path d=\"M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z\" \/>\n                            <\/svg><\/span>","is_header_builder_active":"1"};
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/uploads/astra-addon/astra-addon-66b2fbc2095859-80782297.js?ver=3.6.8" id="astra-addon-js-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.15.0" id="elementor-pro-webpack-runtime-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.18.3" id="elementor-webpack-runtime-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.18.3" id="elementor-frontend-modules-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/kansaipaint.com.vn\/wp-admin\/admin-ajax.php","nonce":"05c6840106","urls":{"assets":"https:\/\/kansaipaint.com.vn\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/kansaipaint.com.vn\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"vi_VN","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/kansaipaint.com.vn\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.15.0" id="elementor-pro-frontend-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.18.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"theme_builder_v2":true,"block_editor_assets_optimize":true,"landing-pages":true,"e_image_loading_optimization":true,"e_global_styleguide":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/kansaipaint.com.vn\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":12300,"title":"Kansai%20Paint%20-%20Th%C6%B0%C6%A1ng%20Hi%E1%BB%87u%20S%C6%A1n%20H%C6%A1n%20100%20N%C4%83m%20%C4%90%E1%BA%BFn%20T%E1%BB%AB%20Nh%E1%BA%ADt%20B%E1%BA%A3n","excerpt":"","featuredImage":false}};
+</script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.18.3" id="elementor-frontend-js"></script>
+<script  data-wpmeteor-after="REORDER" type="javascript/blocked" data-src="https://kansaipaint.com.vn/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.15.0" id="pro-elements-handlers-js"></script>
+			<script  data-wpmeteor-after="REORDER" type="javascript/blocked">
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+			<script  data-wpmeteor-after="REORDER" type="javascript/blocked" id="rs-initialisation-scripts">
+		var	tpj = jQuery;
+
+		var	revapi1;
+
+		if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider11"] = {once: RS_MODULES.modules["revslider11"]!==undefined ? RS_MODULES.modules["revslider11"].once : undefined, init:function() {
+			window.revapi1 = window.revapi1===undefined || window.revapi1===null || window.revapi1.length===0  ? document.getElementById("rev_slider_1_1") : window.revapi1;
+			if(window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length==0) { window.revapi1initTry = window.revapi1initTry ===undefined ? 0 : window.revapi1initTry+1; if (window.revapi1initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider11"].init()}); return;}
+			window.revapi1 = jQuery(window.revapi1);
+			if(window.revapi1.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_1_1"); return;}
+			revapi1.revolutionInit({
+					revapi:"revapi1",
+					DPR:"dpr",
+					sliderLayout:"fullwidth",
+					visibilityLevels:"1240,1024,778,480",
+					gridwidth:1920,
+					gridheight:800,
+					lazyType:"smart",
+					perspective:600,
+					perspectiveType:"global",
+					editorheight:"800,768,960,720",
+					responsiveLevels:"1240,1024,778,480",
+					progressBar:{disableProgressBar:true},
+					navigation: {
+						onHoverStop:false
+					},
+					viewPort: {
+						global:true,
+						globalDist:"-200px",
+						enable:false
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid:true
+					},
+			});
+			
+		}} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+	</script>
+	</body>
+</html>
